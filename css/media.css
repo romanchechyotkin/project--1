@@ -1,0 +1,84 @@
+@media(max-width: 1100px){
+    .skills-inner{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .skills-item{
+        margin-bottom: 30px;
+    }   
+    .skills-item:hover{
+        transform: none;
+    }
+}
+
+@media(max-width: 650px){
+    header{
+        font-size: 16px;
+    }
+    .introduce-list-item1{
+        font-size: 40px;
+        line-height: 38px;
+    }
+    .about{
+        font-size: 14px;
+    }
+    .footer{
+        padding: 70px 0;
+    }
+}
+
+@media(max-width: 450px){
+    .nav-list{
+        flex-wrap: wrap;
+    }
+    
+    #firstli{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .introduce{
+        padding-bottom: 50px;
+    }
+    .introduce-list-item1{
+        font-size: 35px;
+    }
+    .introduce-list-item2{
+        margin: 0;
+        text-align: center;
+    }
+    .introduce-list-item3{
+        writing-mode: horizontal-tb;
+    }
+    .introduce-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .about{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .section-title{
+        font-size: 27px;
+    }
+    .skills{
+        padding-bottom: 50px;
+    }
+    .skills-inner{
+        grid-template-columns: 1fr;
+        align-content: center;
+    }
+    .skills-item{
+        align-content: center;
+    }
+    .portfolio{
+        padding: 50px 0 0;
+    }
+    .portfolio-link {
+        font-size: 14px;
+    }
+    
+}

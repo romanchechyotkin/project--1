@@ -1,0 +1,285 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'gilroy-bold';
+  font-style: normal;
+  src: url("../fonts/gilroy-bold.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'girloy-medium';
+  font-style: normal;
+  src: url("../fonts/gilroy-medium.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'girloy-regular';
+  font-style: normal;
+  src: url("../fonts/gilroy-regular.ttf");
+  font-weight: 400;
+}
+
+body {
+  font-family: 'girloy-medium', sans-serif;
+  font-size: 18px;
+  color: #070707;
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  padding-top: 33px;
+}
+
+header .nav {
+  padding-bottom: 33px;
+  border-bottom: 1px solid #828282;
+}
+
+header .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'gilroy-bold';
+  line-height: 22.28px;
+}
+
+header .nav-list li {
+  transition: all 0.3s;
+}
+
+header .nav-list li:hover {
+  transform: translate(5px);
+  color: #070707;
+}
+
+header .nav-list li + li {
+  color: #828282;
+}
+
+.introduce {
+  padding-top: 40px;
+  padding-bottom: 105px;
+}
+
+.introduce-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 35px;
+}
+
+.introduce-list-item1 {
+  font-family: 'gilroy-bold';
+  font-size: 47.3392px;
+  line-height: 59px;
+}
+
+.introduce-list-item2 {
+  line-height: 22px;
+  margin-left: -50px;
+}
+
+.introduce-list-item3 {
+  font-family: 'gilroy-bold';
+  line-height: 20px;
+  color: #828282;
+  writing-mode: vertical-lr;
+}
+
+.introduce-list-item3 span {
+  color: #070707;
+}
+
+.introduce-img {
+  max-width: 100%;
+}
+
+.section-title {
+  font-family: 'gilroy-bold';
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.section-text {
+  margin: 0;
+  line-height: 22px;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0 107px;
+  background-color: #F6F6F6;
+}
+
+.about h3 {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.about .text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 485px;
+}
+
+.skills {
+  padding-top: 91px;
+  padding-bottom: 110px;
+}
+
+.skills h3 {
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+.skills-text {
+  margin-bottom: 85px;
+}
+
+.skills-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-item {
+  font-family: 'gilroy-bold';
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.skills-item:hover {
+  transform: scale(1.2);
+  font-size: 18px;
+  color: #070707;
+}
+
+.skills-item-name {
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 60px;
+}
+
+.skills-review {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.portfolio {
+  padding-top: 113px;
+  padding-bottom: 90px;
+  background-color: #F6F6F6;
+}
+
+.portfolio h3 {
+  margin: 0;
+  margin-bottom: 47px;
+}
+
+.portfolio-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 99px;
+}
+
+.portfolio-img {
+  margin-bottom: 46px;
+  max-width: 100%;
+}
+
+.portfolio-link {
+  line-height: 22px;
+  text-decoration-line: underline;
+}
+
+.footer {
+  padding-top: 115px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 30px;
+}
+
+.footer-btn {
+  background-color: #000;
+  color: #fff;
+  width: 200px;
+  height: 42px;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-family: 'gilroy-bold';
+  line-height: 22px;
+  text-align: center;
+  border-radius: 35%;
+  transition: all 0.3s;
+}
+
+.footer-btn:hover {
+  transform: scale(1.2);
+  background-color: #828282;
+}
+
+.footer .logos {
+  margin-top: 90px;
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer .logos li {
+  transition: all 0.3s;
+}
+
+.footer .logos li:hover {
+  transform: scale(1.2);
+}
+
+.footer-text {
+  color: #828282;
+}
+/*# sourceMappingURL=style.css.map */
